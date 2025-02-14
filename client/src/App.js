@@ -17,7 +17,6 @@ import AdminOrders from "./pages/AdminOrders";
 import Checkout from "./pages/Checkout";
 import OrderSuccess from "./pages/OrderSuccess";
 import Orders from "./pages/Orders";
-import AdminLayout from "./components/AdminLayout";
 import { useAuth } from "./context/AuthContext";
 import { CartProvider } from "./context/CartContext";
 
@@ -101,9 +100,7 @@ function App() {
                 path="/admin"
                 element={
                   <AdminRoute>
-                    <AdminLayout>
                       <AdminDashboard />
-                    </AdminLayout>
                   </AdminRoute>
                 }
               />
@@ -111,9 +108,7 @@ function App() {
                 path="/admin/products"
                 element={
                   <AdminRoute>
-                    <AdminLayout>
                       <AdminProducts />
-                    </AdminLayout>
                   </AdminRoute>
                 }
               />
@@ -121,9 +116,7 @@ function App() {
                 path="/admin/products/new"
                 element={
                   <AdminRoute>
-                    <AdminLayout>
                       <AdminProductCreate />
-                    </AdminLayout>
                   </AdminRoute>
                 }
               />
@@ -131,9 +124,7 @@ function App() {
                 path="/admin/products/edit/:id"
                 element={
                   <AdminRoute>
-                    <AdminLayout>
                       <AdminProductEdit />
-                    </AdminLayout>
                   </AdminRoute>
                 }
               />
@@ -141,9 +132,7 @@ function App() {
                 path="/admin/orders"
                 element={
                   <AdminRoute>
-                    <AdminLayout>
                       <AdminOrders />
-                    </AdminLayout>
                   </AdminRoute>
                 }
               />

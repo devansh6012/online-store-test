@@ -20,6 +20,7 @@ const initialState = {
 
 // Cart reducer
 const cartReducer = (state, action) => {
+  console.log("state", state);
   switch (action.type) {
     case CART_ACTIONS.ADD_TO_CART: {
       const existingItemIndex = state.items.findIndex(
